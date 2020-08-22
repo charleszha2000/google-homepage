@@ -88,15 +88,31 @@ Main Functionality CSS
 
 #searchbar {
     width: 40%;
-    height: 40%;
+    height: 60%;
     justify-self: center;
     align-self: center;
-    margin-top: -2%;
-    border-radius: 3%;
+    margin-top: -1%;
+    border-radius: 20%;
+    border: 2px;
+    border-color: black;
+    background-color:rgb(235, 235, 235);
+    display:flex;
+}
+
+#search-entry{
+    border: none !important;
+    background-color: transparent;
+    height:100%;
+    width: 95%;
+    font-size: 16px;  
+    outline:none; 
+}
+#search-entry:focus{
+    outline:none;
+    box-shadow:none;
 }
 
 #buttons{
-    margin-top: -3%;
     display:grid;
     grid-template-columns: auto auto;
     justify-items: right;
@@ -104,8 +120,55 @@ Main Functionality CSS
 
 button {
     width: 200px;
-    height: 20px;
-    margin-top: -15%;
+    height: 25px;
+    margin-top: -25%;
     font-size: 14px;
     border-radius: 5%;
+}
+
+footer{
+    position:absolute;
+    margin-left: -0.4%;
+    width: 100%;
+    bottom: 0px;
+    background-color: rgb(240,240,240);
+}
+
+.footer-box{
+    padding-left: 2px;
+    overflow:auto;
+    height:100%;
+    background-color:rgb(240, 240, 240);
+    color:gray;
+    font-size:18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-width: 1px;
+    border-color: darkgray;
+    border-style: solid;
+    
+}
+
+
+#bottom{
+    width: auto;
+    border-top: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-color: darkgray;
+    display:grid;
+    grid-auto-columns: auto auto;
+}
+
+#bottom > text {
+    padding-right: 20px;
+}
+
+
+.footer-right{
+    margin-top: -18px;
+    margin-right: 5px;
+    justify-self: right;
+    align-self: right;
+    text-anchor: center;
 }
