@@ -1,0 +1,111 @@
+html {
+    height:auto;
+    width:auto;
+}
+
+body {
+    background-color: white;
+    font-family:Arial;
+    font-size: 16px;
+    color: black;
+    display:grid;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+/*
+Navigation bar (header) elements
+*/
+
+/*
+Class for the entire navigation bar divider
+*/
+
+.nav-bar{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-row: 0/1;
+}
+
+/*
+General class for the navigation elements (list of links)
+*/
+.nav-elements {
+    list-style-type:none; 
+    display: grid;
+}
+
+.nav-elements > li:hover{
+    text-decoration:underline;
+}
+/*
+Navigation Elements subclass
+*/
+.left{
+    justify-self: left;
+    grid-template-columns: auto auto;
+}
+.right {
+    grid-template-columns: auto auto auto;
+    justify-self: right;
+}
+    
+.user-icon {
+    color: white;
+    text-align: center;
+    margin-top: -25px;
+    background-color: teal;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    
+}
+
+.user-icon > p:hover {
+    text-decoration:none;
+}
+
+.user-icon > p {
+    align-self:center;
+    justify-self:center;
+    padding-top: 10px;
+}
+
+/*
+Main Functionality CSS
+*/
+
+.main{
+    justify-items: center;
+    align-items: center;
+    display:grid;
+    grid-template-rows: 35% 20% 10% 10% 25%;
+    grid-template-columns: 1fr;
+}
+
+.searchtools {
+    display:grid;
+    grid-template-rows: auto auto;
+}
+
+#searchbar {
+    width: 40%;
+    height: 40%;
+    justify-self: center;
+    align-self: center;
+    margin-top: -2%;
+    border-radius: 3%;
+}
+
+#buttons{
+    margin-top: -3%;
+    display:grid;
+    grid-template-columns: auto auto;
+    justify-items: right;
+}
+
+button {
+    width: 200px;
+    height: 20px;
+    margin-top: -15%;
+    font-size: 14px;
+    border-radius: 5%;
+}
